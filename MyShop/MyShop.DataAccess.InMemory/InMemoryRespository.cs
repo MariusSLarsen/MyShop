@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MyShop.DataAccess.InMemory
 {
-    public class InMemoryRespository<T> : IRespository<T> where T : BaseEntity
+    public class InMemoryRespository<T> : IRepository<T> where T : BaseEntity
     {
         ObjectCache cache = MemoryCache.Default;
         List<T> items;
